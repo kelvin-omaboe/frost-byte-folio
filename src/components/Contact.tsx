@@ -1,12 +1,9 @@
 
 import React from 'react';
-import { Mail, Github, Linkedin, Instagram, Send, Phone } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram, Send, Phone, MessageSquare, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { X } from 'lucide-react'; // Import X icon (formerly Twitter)
-import { Discord } from 'lucide-react';
-import { MessageSquare } from 'lucide-react'; // For WhatsApp
 
 const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -94,7 +91,22 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <Discord className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  {/* Using a custom SVG for Discord since Discord isn't available in lucide-react */}
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5 text-web3-main mr-3 mt-1"
+                  >
+                    <path d="M9 16c1.2 0 2.25-.72 2.25-1.6S10.2 12.8 9 12.8s-2.25.72-2.25 1.6S7.8 16 9 16Z" />
+                    <path d="M15 16c1.2 0 2.25-.72 2.25-1.6s-1.05-1.6-2.25-1.6-2.25.72-2.25 1.6S13.8 16 15 16Z" />
+                    <path d="M5.61 19.13c1.46.69 3.08 1.04 4.67 1.04 5.5 0 8.96-2.75 9.82-8.01.25-1.5.24-3.04-.06-4.55-.91-4.63-7.26-1.98-8.89-1.98-1.17 0-3.25-.28-5.38-1.29-2.51-1.2-3.33 7.85-3.77 8.92-.61 1.49-.42 3.38.08 4.76.71 1.94 1.7 1.8 3.53 1.11Z" />
+                    <path d="M4.5 17.72c-.38 0-.71-.32-.68-.7.04-.58.19-1.32.51-2.2.34-.95.92-1.87 1.91-2.24.92-.35 1.91-.1 2.72.53 1.54 1.2 3.3 1.82 5.03 1.82s3.49-.62 5.03-1.82c.81-.63 1.8-.88 2.72-.53.99.37 1.57 1.3 1.91 2.24.32.88.47 1.62.51 2.2.03.38-.3.7-.68.7H4.5Z" />
+                  </svg>
                   <div>
                     <h4 className="font-medium">Discord</h4>
                     <a href="https://discord.com/users/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
@@ -127,7 +139,22 @@ const Contact: React.FC = () => {
                     <MessageSquare className="h-5 w-5 text-web3-dark" />
                   </a>
                   <a href="https://discord.com/users/kelvinomaboe" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <Discord className="h-5 w-5 text-web3-dark" />
+                    {/* Custom Discord icon for the social links section */}
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 text-web3-dark"
+                    >
+                      <path d="M9 16c1.2 0 2.25-.72 2.25-1.6S10.2 12.8 9 12.8s-2.25.72-2.25 1.6S7.8 16 9 16Z" />
+                      <path d="M15 16c1.2 0 2.25-.72 2.25-1.6s-1.05-1.6-2.25-1.6-2.25.72-2.25 1.6S13.8 16 15 16Z" />
+                      <path d="M5.61 19.13c1.46.69 3.08 1.04 4.67 1.04 5.5 0 8.96-2.75 9.82-8.01.25-1.5.24-3.04-.06-4.55-.91-4.63-7.26-1.98-8.89-1.98-1.17 0-3.25-.28-5.38-1.29-2.51-1.2-3.33 7.85-3.77 8.92-.61 1.49-.42 3.38.08 4.76.71 1.94 1.7 1.8 3.53 1.11Z" />
+                      <path d="M4.5 17.72c-.38 0-.71-.32-.68-.7.04-.58.19-1.32.51-2.2.34-.95.92-1.87 1.91-2.24.92-.35 1.91-.1 2.72.53 1.54 1.2 3.3 1.82 5.03 1.82s3.49-.62 5.03-1.82c.81-.63 1.8-.88 2.72-.53.99.37 1.57 1.3 1.91 2.24.32.88.47 1.62.51 2.2.03.38-.3.7-.68.7H4.5Z" />
+                    </svg>
                   </a>
                 </div>
               </div>
