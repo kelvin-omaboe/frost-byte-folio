@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <div>
             <h2 className="section-heading">About Me</h2>
             <div className="mb-6 flex items-center">
-              <Avatar className="h-24 w-24 border-2 border-web3-main mr-6">
+              <Avatar className="h-32 w-32 border-2 border-web3-main mr-6">
                 <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Kelvin Omaboe" />
                 <AvatarFallback>KO</AvatarFallback>
               </Avatar>
