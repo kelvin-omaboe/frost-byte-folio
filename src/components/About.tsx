@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileText, Send, Globe } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-web3-lightest/30">
+    <section id="about" className="py-12 bg-gradient-to-b from-background to-web3-lightest/30">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

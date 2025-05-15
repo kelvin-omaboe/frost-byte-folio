@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ChevronUp } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-web3-darkest text-white py-12">
+    <footer className="bg-web3-darkest text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -110,3 +111,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+

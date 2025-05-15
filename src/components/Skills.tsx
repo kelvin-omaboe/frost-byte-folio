@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Layers, 
@@ -74,14 +73,14 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-12">
       <div className="section-container">
         <h2 className="section-heading text-center">My Skills</h2>
         <p className="section-subheading text-center mx-auto">
           I've developed a diverse skill set focused on Web3 technologies and modern web development
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index}

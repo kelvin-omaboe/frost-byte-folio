@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { Button } from "@/components/ui/button";
@@ -80,14 +79,14 @@ const Projects: React.FC = () => {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-web3-lightest/30 to-background">
+    <section id="projects" className="py-12 bg-gradient-to-b from-web3-lightest/30 to-background">
       <div className="section-container">
         <h2 className="section-heading text-center">My Projects</h2>
         <p className="section-subheading text-center mx-auto">
           Explore my Web3 development work across DeFi, NFTs, and dApps
         </p>
         
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
           {filters.map((filter) => (
             <Button
               key={filter.id}
