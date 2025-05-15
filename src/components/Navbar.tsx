@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center">
           <a href="#home" className="text-xl md:text-2xl font-bold bg-gradient-to-r from-web3-main to-web3-dark bg-clip-text text-transparent">
-            Web3.Folio
+            Kays' folio
           </a>
         </div>
         

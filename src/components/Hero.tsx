@@ -12,13 +12,13 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 pt-16 relative z-10">
         <div className="max-w-4xl">
           <div className="animate-fade-in [animation-delay:200ms] opacity-0">
-            <p className="text-web3-main font-medium mb-3">Hello, I'm</p>
+            <p className="text-web3-main font-medium mb-3 text-xl md:text-2xl">Hello, I'm</p>
           </div>
           
           <div className="animate-fade-in [animation-delay:400ms] opacity-0">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
               <span className="bg-gradient-to-r from-web3-darkest to-web3-main bg-clip-text text-transparent">
-                Alex Johnson
+                Kelvin Omaboe
               </span>
             </h1>
           </div>
@@ -45,14 +45,14 @@ const Hero: React.FC = () => {
               Contact Me
             </Button>
           </div>
-          
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-pulse-slow hidden md:block">
-            <a href="#about" className="flex flex-col items-center text-sm text-muted-foreground hover:text-web3-main transition-colors">
-              <span className="mb-2">Scroll Down</span>
-              <ArrowDownCircle size={24} />
-            </a>
-          </div>
         </div>
+      </div>
+      
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-pulse-slow md:block z-10">
+        <a href="#about" className="flex flex-col items-center text-sm text-muted-foreground hover:text-web3-main transition-colors">
+          <span className="mb-2">Scroll Down</span>
+          <ArrowDownCircle size={24} />
+        </a>
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>

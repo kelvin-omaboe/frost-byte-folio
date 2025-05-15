@@ -21,73 +21,77 @@ const Contact: React.FC = () => {
           Have a question or want to work together? Feel free to contact me!
         </p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-          <div>
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
-            
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <Mail className="h-5 w-5 text-web3-main mr-3 mt-1" />
-                <div>
-                  <h4 className="font-medium">Email</h4>
-                  <a href="mailto:alex@web3folio.dev" className="text-web3-main hover:text-web3-dark transition-colors">
-                    alex@web3folio.dev
-                  </a>
+        <div className="flex flex-col lg:flex-row gap-8 mt-12">
+          <div className="flex-1">
+            <div className="glass p-8 h-full relative">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-web3-light to-web3-main"></div>
+              
+              <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <Mail className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <div>
+                    <h4 className="font-medium">Email</h4>
+                    <a href="mailto:kelvin@kaysfolio.dev" className="text-web3-main hover:text-web3-dark transition-colors">
+                      kelvin@kaysfolio.dev
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <Linkedin className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <div>
+                    <h4 className="font-medium">LinkedIn</h4>
+                    <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
+                      linkedin.com/in/kelvinomaboe
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <Github className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <div>
+                    <h4 className="font-medium">GitHub</h4>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
+                      github.com/kelvinomaboe
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <Twitter className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <div>
+                    <h4 className="font-medium">Twitter</h4>
+                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
+                      @kelvinomaboe
+                    </a>
+                  </div>
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <Linkedin className="h-5 w-5 text-web3-main mr-3 mt-1" />
-                <div>
-                  <h4 className="font-medium">LinkedIn</h4>
-                  <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
-                    linkedin.com/in/alexjohnson
+              <div className="mt-12">
+                <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
+                <p className="text-muted-foreground mb-6">
+                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                </p>
+                
+                <div className="flex space-x-4">
+                  <a href="https://github.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+                    <Github className="h-5 w-5 text-web3-dark" />
+                  </a>
+                  <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+                    <Linkedin className="h-5 w-5 text-web3-dark" />
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+                    <Twitter className="h-5 w-5 text-web3-dark" />
                   </a>
                 </div>
-              </div>
-              
-              <div className="flex items-start">
-                <Github className="h-5 w-5 text-web3-main mr-3 mt-1" />
-                <div>
-                  <h4 className="font-medium">GitHub</h4>
-                  <a href="https://github.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
-                    github.com/alexweb3
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <Twitter className="h-5 w-5 text-web3-main mr-3 mt-1" />
-                <div>
-                  <h4 className="font-medium">Twitter</h4>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors">
-                    @alexweb3
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-12">
-              <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
-              <p className="text-muted-foreground mb-6">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-              </p>
-              
-              <div className="flex space-x-4">
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                  <Github className="h-5 w-5 text-web3-dark" />
-                </a>
-                <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                  <Linkedin className="h-5 w-5 text-web3-dark" />
-                </a>
-                <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="p-3 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                  <Twitter className="h-5 w-5 text-web3-dark" />
-                </a>
               </div>
             </div>
           </div>
           
-          <div className="relative">
+          <div className="flex-1 relative">
             <div className="absolute -top-6 -left-6 w-40 h-40 bg-web3-light/30 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-web3-main/20 rounded-full blur-3xl"></div>
             

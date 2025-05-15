@@ -2,6 +2,7 @@
 import React from 'react';
 import { FileText, Send, Globe } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const About: React.FC = () => {
   return (
@@ -10,10 +11,16 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="section-heading">About Me</h2>
-            <p className="text-lg mb-6">
-              Hi there! I'm a passionate tech student and Web3 developer with a strong interest in blockchain technology, 
-              decentralized applications, and the future of the internet.
-            </p>
+            <div className="mb-6 flex items-center">
+              <Avatar className="h-24 w-24 border-2 border-web3-main mr-6">
+                <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Kelvin Omaboe" />
+                <AvatarFallback>KO</AvatarFallback>
+              </Avatar>
+              <p className="text-lg">
+                Hi there! I'm a passionate tech student and Web3 developer with a strong interest in blockchain technology, 
+                decentralized applications, and the future of the internet.
+              </p>
+            </div>
             
             <p className="text-lg mb-6">
               My journey began with traditional web development, but after discovering blockchain technology in 2020, 
