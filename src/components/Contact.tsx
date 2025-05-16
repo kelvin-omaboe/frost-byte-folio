@@ -14,22 +14,22 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-10">
       <div className="section-container">
         <h2 className="section-heading text-center">Get In Touch</h2>
         <p className="section-subheading text-center mx-auto max-w-2xl">
           Have a question or want to work together? Feel free to contact me!
         </p>
         
-        <div className="glass p-6 md:p-8 relative mt-8 md:mt-12">
+        <div className="glass p-6 md:p-8 relative mt-8">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-web3-light to-web3-main"></div>
           
-          <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Contact Information Side */}
-            <div className="flex-1 order-2 lg:order-1">
+            <div className="space-y-6">
               <h3 className="text-xl font-bold mb-4">Contact Information</h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
@@ -89,31 +89,6 @@ const Contact: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
-                  {/* Using a custom SVG for Discord since Discord isn't available in lucide-react */}
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 text-web3-main mr-3 mt-1"
-                  >
-                    <path d="M9 16c1.2 0 2.25-.72 2.25-1.6S10.2 12.8 9 12.8s-2.25.72-2.25 1.6S7.8 16 9 16Z" />
-                    <path d="M15 16c1.2 0 2.25-.72 2.25-1.6s-1.05-1.6-2.25-1.6-2.25.72-2.25 1.6S13.8 16 15 16Z" />
-                    <path d="M5.61 19.13c1.46.69 3.08 1.04 4.67 1.04 5.5 0 8.96-2.75 9.82-8.01.25-1.5.24-3.04-.06-4.55-.91-4.63-7.26-1.98-8.89-1.98-1.17 0-3.25-.28-5.38-1.29-2.51-1.2-3.33 7.85-3.77 8.92-.61 1.49-.42 3.38.08 4.76.71 1.94 1.7 1.8 3.53 1.11Z" />
-                    <path d="M4.5 17.72c-.38 0-.71-.32-.68-.7.04-.58.19-1.32.51-2.2.34-.95.92-1.87 1.91-2.24.92-.35 1.91-.1 2.72.53 1.54 1.2 3.3 1.82 5.03 1.82s3.49-.62 5.03-1.82c.81-.63 1.8-.88 2.72-.53.99.37 1.57 1.3 1.91 2.24.32.88.47 1.62.51 2.2.03.38-.3.7-.68.7H4.5Z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium">Discord</h4>
-                    <a href="https://discord.com/users/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      kelvinomaboe#1234
-                    </a>
-                  </div>
-                </div>
               </div>
               
               <div className="hidden md:block">
@@ -134,30 +109,12 @@ const Contact: React.FC = () => {
                   <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                     <MessageSquare className="h-4 w-4 text-web3-dark" />
                   </a>
-                  <a href="https://discord.com/users/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    {/* Custom Discord icon for the social links section */}
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-4 w-4 text-web3-dark"
-                    >
-                      <path d="M9 16c1.2 0 2.25-.72 2.25-1.6S10.2 12.8 9 12.8s-2.25.72-2.25 1.6S7.8 16 9 16Z" />
-                      <path d="M15 16c1.2 0 2.25-.72 2.25-1.6s-1.05-1.6-2.25-1.6-2.25.72-2.25 1.6S13.8 16 15 16Z" />
-                      <path d="M5.61 19.13c1.46.69 3.08 1.04 4.67 1.04 5.5 0 8.96-2.75 9.82-8.01.25-1.5.24-3.04-.06-4.55-.91-4.63-7.26-1.98-8.89-1.98-1.17 0-3.25-.28-5.38-1.29-2.51-1.2-3.33 7.85-3.77 8.92-.61 1.49-.42 3.38.08 4.76.71 1.94 1.7 1.8 3.53 1.11Z" />
-                      <path d="M4.5 17.72c-.38 0-.71-.32-.68-.7.04-.58.19-1.32.51-2.2.34-.95.92-1.87 1.91-2.24.92-.35 1.91-.1 2.72.53 1.54 1.2 3.3 1.82 5.03 1.82s3.49-.62 5.03-1.82c.81-.63 1.8-.88 2.72-.53.99.37 1.57 1.3 1.91 2.24.32.88.47 1.62.51 2.2.03.38-.3.7-.68.7H4.5Z" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
             
             {/* Message Form Side */}
-            <div className="flex-1 order-1 lg:order-2 relative">
+            <div className="relative">
               <div className="absolute -top-6 -left-6 w-20 h-20 md:w-40 md:h-40 bg-web3-light/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 md:w-60 md:h-60 bg-web3-main/20 rounded-full blur-3xl"></div>
               
@@ -236,24 +193,6 @@ const Contact: React.FC = () => {
               </a>
               <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <MessageSquare className="h-4 w-4 text-web3-dark" />
-              </a>
-              <a href="https://discord.com/users/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                {/* Custom Discord icon for the social links section */}
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-4 w-4 text-web3-dark"
-                >
-                  <path d="M9 16c1.2 0 2.25-.72 2.25-1.6S10.2 12.8 9 12.8s-2.25.72-2.25 1.6S7.8 16 9 16Z" />
-                  <path d="M15 16c1.2 0 2.25-.72 2.25-1.6s-1.05-1.6-2.25-1.6-2.25.72-2.25 1.6S13.8 16 15 16Z" />
-                  <path d="M5.61 19.13c1.46.69 3.08 1.04 4.67 1.04 5.5 0 8.96-2.75 9.82-8.01.25-1.5.24-3.04-.06-4.55-.91-4.63-7.26-1.98-8.89-1.98-1.17 0-3.25-.28-5.38-1.29-2.51-1.2-3.33 7.85-3.77 8.92-.61 1.49-.42 3.38.08 4.76.71 1.94 1.7 1.8 3.53 1.11Z" />
-                  <path d="M4.5 17.72c-.38 0-.71-.32-.68-.7.04-.58.19-1.32.51-2.2.34-.95.92-1.87 1.91-2.24.92-.35 1.91-.1 2.72.53 1.54 1.2 3.3 1.82 5.03 1.82s3.49-.62 5.03-1.82c.81-.63 1.8-.88 2.72-.53.99.37 1.57 1.3 1.91 2.24.32.88.47 1.62.51 2.2.03.38-.3.7-.68.7H4.5Z" />
-                </svg>
               </a>
             </div>
           </div>

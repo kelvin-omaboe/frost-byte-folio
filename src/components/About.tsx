@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileText, Send, Globe } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,7 @@ const About: React.FC = () => {
           <div>
             <h2 className="section-heading">About Me</h2>
             <div className="mb-6 flex items-center">
-              <Avatar className="h-32 w-32 border-2 border-web3-main mr-6">
+              <Avatar className="h-52 w-52 border-2 border-web3-main mr-6">
                 <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Kelvin Omaboe" />
                 <AvatarFallback>KO</AvatarFallback>
               </Avatar>
@@ -55,7 +56,11 @@ const About: React.FC = () => {
                 Download Resume
               </Button>
               
-              <Button variant="outline" className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white">
+              <Button 
+                variant="outline" 
+                className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white"
+                onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+              >
                 <Send size={16} className="mr-2" /> Get in Touch
               </Button>
             </div>

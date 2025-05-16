@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Github, Twitter } from "lucide-react";
+import { Menu, X, Github } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,8 +50,8 @@ const Navbar: React.FC = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github size={20} className="hover:text-web3-main transition-colors" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <Twitter size={20} className="hover:text-web3-main transition-colors" />
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <X size={20} className="hover:text-web3-main transition-colors" />
             </a>
             <Button variant="outline" className="ml-2 border-web3-main text-web3-main hover:bg-web3-main hover:text-white">
               Resume
@@ -87,8 +87,8 @@ const Navbar: React.FC = () => {
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={20} className="hover:text-web3-main transition-colors" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <Twitter size={20} className="hover:text-web3-main transition-colors" />
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <X size={20} className="hover:text-web3-main transition-colors" />
               </a>
               <Button variant="outline" size="sm" className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white">
                 Resume

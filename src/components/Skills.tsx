@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { 
   Layers, 
   Code, 
@@ -9,6 +10,30 @@ import {
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) {
+      observer.observe(skillsSection);
+    }
+    
+    return () => {
+      if (skillsSection) {
+        observer.unobserve(skillsSection);
+      }
+    };
+  }, []);
+
   const skillCategories = [
     {
       title: "Blockchain",
@@ -84,7 +109,10 @@ const Skills: React.FC = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index}
-              className="bg-white dark:bg-web3-darkest/30 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-web3-lightest/50 hover:border-web3-light"
+              className={`bg-white dark:bg-web3-darkest/30 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-web3-lightest/50 hover:border-web3-light ${
+                visible ? 'animate-fade-in opacity-0' : 'opacity-0'
+              }`}
+              style={{ animationDelay: `${(index * 200)}ms` }}
             >
               <div className="flex items-center mb-4">
                 {category.icon}
@@ -100,8 +128,11 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="w-full bg-web3-lightest rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-web3-light to-web3-main h-2 rounded-full"
-                        style={{ width: `${skill.level}%` }}
+                        className={`bg-gradient-to-r from-web3-light to-web3-main h-2 rounded-full transition-all duration-1000 ease-out ${visible ? '' : 'w-0'}`}
+                        style={{ 
+                          width: visible ? `${skill.level}%` : '0%',
+                          transitionDelay: `${(index * 100) + (skillIndex * 100)}ms` 
+                        }}
                       ></div>
                     </div>
                   </div>

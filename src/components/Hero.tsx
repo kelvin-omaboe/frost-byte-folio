@@ -1,9 +1,17 @@
+
 import React from 'react';
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import ParticleBackground from './ParticleBackground';
 
 const Hero: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       <ParticleBackground />
@@ -36,21 +44,28 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="space-x-4 animate-fade-in [animation-delay:1000ms] opacity-0">
-            <Button className="btn-gradient">
+            <Button 
+              className="btn-gradient"
+              onClick={() => scrollToSection('projects')}
+            >
               View My Work
             </Button>
             
-            <Button variant="outline" className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white transition-all duration-300">
+            <Button 
+              variant="outline" 
+              className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white transition-all duration-300"
+              onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+            >
               Contact Me
             </Button>
           </div>
         </div>
       </div>
       
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-pulse-slow md:block z-10">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce-slow md:block z-10">
         <a href="#about" className="flex flex-col items-center text-sm text-muted-foreground hover:text-web3-main transition-colors">
           <span className="mb-2">Scroll Down</span>
-          <ArrowDownCircle size={24} />
+          <ArrowDownCircle size={24} className="animate-bounce" />
         </a>
       </div>
       
