@@ -36,13 +36,13 @@ const Skills: React.FC = () => {
 
   const skillCategories = [
     {
-      title: "Web Development",
+      title: "Programming Languages",
       icon: <Network className="h-8 w-8 text-web3-main" />,
       skills: [
-        { name: "Ethereum", level: 90 },
-        { name: "Solana", level: 75 },
-        { name: "Smart Contracts", level: 85 },
-        { name: "Web3.js/Ethers.js", level: 90 },
+        { name: "Python", level: 80 },
+        { name: "C++", level: 75 },
+        { name: "Java", level: 85 },
+        { name: "JavaScript", level: 70 },
       ]
     },
     {
@@ -90,11 +90,21 @@ const Skills: React.FC = () => {
       title: "UI/UX Design",
       icon: <Box className="h-8 w-8 text-web3-main" />,
       skills: [
-        { name: "ERC-721", level: 90 },
-        { name: "ERC-1155", level: 85 },
-        { name: "NFT Marketplaces", level: 80 },
-        { name: "IPFS", level: 75 },
+        { name: "Figma", level: 90 },
+        { name: "Canva", level: 85 },
+        { name: "Adobe Creative Cloud", level: 80 },
       ]
+    },
+    {
+      title: "Computer Security",
+      icon: <Box className="h-8 w-8 text-web3-main" />,
+      skills: [
+        { name: "Penetration Testing", level: 50 },
+        { name: "Vulnerability Assessment", level: 60 },
+        { name: "Network Security", level: 70 },
+        { name: "Web Application Security", level: 80 },
+        { name: "Malware Analysis", level: 50 },
+      ]  
     }
   ];
 
@@ -103,7 +113,7 @@ const Skills: React.FC = () => {
       <div className="section-container">
         <h2 className="section-heading text-center">My Skills</h2>
         <p className="section-subheading text-center mx-auto">
-          I've developed a diverse skill set focused on Web3 technologies and modern web development
+          I've developed a diverse skill set focused on modern web/App development and Computer Security
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">

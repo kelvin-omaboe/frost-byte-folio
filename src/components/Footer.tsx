@@ -17,13 +17,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-web3-light to-web3-main bg-clip-text text-transparent">
-              Web3.Folio
+              Kelvin Omaboe | Tech Boy
             </h3>
             <p className="text-gray-300 mb-4">
-              Building the decentralized future, one project at a time.
+              Building the digital future, one project at a time.
             </p>
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Web3.Folio. All rights reserved.
+              © {new Date().getFullYear()} Kelvin Omaboe. All rights reserved.
             </p>
           </div>
           
@@ -52,22 +52,22 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
+                <a href="https://github.com/kelvin-omaboe" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
+                <a href="https://linkedin.com/kelvin-omaboe" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
-                  Twitter
+                <a href="https://x.com/theboy_kaey" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
+                  X
                 </a>
               </li>
               <li>
-                <a href="mailto:alex@web3folio.dev" className="text-gray-300 hover:text-web3-main transition-colors">
+                <a href="mailto:omaboekelvin2005@gmail.com" className="text-gray-300 hover:text-web3-main transition-colors">
                   Email
                 </a>
               </li>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Join My Newsletter</h4>
             <p className="text-gray-300 mb-4">
-              Get updates on my latest projects and Web3 insights
+              Get updates on my latest projects and computer security insights
             </p>
             <div className="flex">
               <input 
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-web3-dark/50 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400">
-            Designed and developed with passion in 2025
+            Designed and developed by Kelvin Omaboe in 2025
           </p>
           
           <button
