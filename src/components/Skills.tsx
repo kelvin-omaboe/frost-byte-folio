@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
 
   const skillCategories = [
     {
-      title: "Blockchain",
+      title: "Web Development",
       icon: <Network className="h-8 w-8 text-web3-main" />,
       skills: [
         { name: "Ethereum", level: 90 },
@@ -49,7 +49,7 @@ const Skills: React.FC = () => {
       title: "Frontend",
       icon: <Code className="h-8 w-8 text-web3-main" />,
       skills: [
-        { name: "React", level: 95 },
+        { name: "HTML/CSS/Js", level: 95 },
         { name: "TypeScript", level: 90 },
         { name: "Tailwind CSS", level: 85 },
         { name: "Next.js", level: 80 },
@@ -63,16 +63,17 @@ const Skills: React.FC = () => {
         { name: "GraphQL", level: 75 },
         { name: "RESTful APIs", level: 90 },
         { name: "MongoDB", level: 80 },
+        { name: "SuperBase", level: 80 },
       ]
     },
     {
-      title: "DeFi Protocols",
+      title: "Game Development",
       icon: <Layers className="h-8 w-8 text-web3-main" />,
       skills: [
-        { name: "Uniswap", level: 85 },
-        { name: "Aave", level: 80 },
-        { name: "Compound", level: 75 },
-        { name: "Chainlink", level: 85 },
+        { name: "Unity Engine", level: 85 },
+        { name: "Pygame", level: 80 },
+        { name: "Java", level: 75 },
+        { name: "Blender/Coral Draw", level: 85 },
       ]
     },
     {
@@ -86,7 +87,7 @@ const Skills: React.FC = () => {
       ]
     },
     {
-      title: "NFT Development",
+      title: "UI/UX Design",
       icon: <Box className="h-8 w-8 text-web3-main" />,
       skills: [
         { name: "ERC-721", level: 90 },

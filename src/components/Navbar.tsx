@@ -84,10 +84,10 @@ const Navbar: React.FC = () => {
               </a>
             ))}
             <div className="flex items-center space-x-4 p-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/kelvin-omaboe" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={20} className="hover:text-web3-main transition-colors" />
               </a>
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <a href="https://x.com/techjesus_kaey" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
                 <X size={20} className="hover:text-web3-main transition-colors" />
               </a>
               <Button variant="outline" size="sm" className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white">

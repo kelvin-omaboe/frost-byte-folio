@@ -32,14 +32,14 @@ const Hero: React.FC = () => {
           
           <div className="animate-fade-in [animation-delay:600ms] opacity-0">
             <h2 className="text-2xl md:text-4xl font-bold mb-6 text-web3-dark">
-              Web3 Developer & Blockchain Enthusiast
+              Aspiring Web,App Developer & Computer Security Expert
             </h2>
           </div>
           
           <div className="animate-fade-in [animation-delay:800ms] opacity-0">
             <p className="text-lg md:text-xl max-w-2xl mb-8 text-muted-foreground">
-              I build decentralized applications and explore blockchain technologies. 
-              Currently focused on smart contract development and DeFi solutions.
+              I build reliable,fast,secure and solution-oriented applications and explore modern day technologies focused on making Apps more secure and reliable. 
+              Currently focused on Innovative development and sustainable solutions.
             </p>
           </div>
           
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             <Button 
               variant="outline" 
               className="border-web3-main text-web3-main hover:bg-web3-main hover:text-white transition-all duration-300"
-              onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+              onClick={() => window.open('https://wa.link/75oudd', '_blank')}
             >
               Contact Me
             </Button>

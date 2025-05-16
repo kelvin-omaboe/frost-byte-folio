@@ -34,8 +34,8 @@ const Contact: React.FC = () => {
                   <Mail className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <a href="mailto:kelvin@kaysfolio.dev" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      kelvin@kaysfolio.dev
+                    <a href="mailto:omaboekelvin2005@gmail.com" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      omaboekelvin2005@gmail.com
                     </a>
                   </div>
                 </div>
@@ -44,8 +44,8 @@ const Contact: React.FC = () => {
                   <Linkedin className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">LinkedIn</h4>
-                    <a href="https://linkedin.com/in/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      /kelvinomaboe
+                    <a href="https://www.linkedin.com/in/kelvin-omaboe/" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      /kelvin-omaboe
                     </a>
                   </div>
                 </div>
@@ -54,8 +54,8 @@ const Contact: React.FC = () => {
                   <Github className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">GitHub</h4>
-                    <a href="https://github.com/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      /kelvinomaboe
+                    <a href="https://github.com/kelvin-omaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      /kelvin-omaboe
                     </a>
                   </div>
                 </div>
@@ -64,8 +64,8 @@ const Contact: React.FC = () => {
                   <X className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">X</h4>
-                    <a href="https://x.com/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      @kelvinomaboe
+                    <a href="https://x.com/techjesus_kaey" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      @techjesus_kaey
                     </a>
                   </div>
                 </div>
@@ -74,8 +74,8 @@ const Contact: React.FC = () => {
                   <Instagram className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">Instagram</h4>
-                    <a href="https://instagram.com/kelvinomaboe" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      @kelvinomaboe
+                    <a href="https://www.instagram.com/theboy_kaey" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      @theboy_kaey
                     </a>
                   </div>
                 </div>
@@ -84,33 +84,13 @@ const Contact: React.FC = () => {
                   <MessageSquare className="h-5 w-5 text-web3-main mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium">WhatsApp</h4>
-                    <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
-                      +1 (234) 567-890
+                    <a href="https://wa.link/75oudd" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
+                      WhatsApp
                     </a>
                   </div>
                 </div>
               </div>
               
-              <div className="hidden md:block">
-                <h3 className="text-xl font-bold mb-3">Let's Connect</h3>
-                <div className="flex flex-wrap gap-2">
-                  <a href="https://github.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <Github className="h-4 w-4 text-web3-dark" />
-                  </a>
-                  <a href="https://linkedin.com/in/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <Linkedin className="h-4 w-4 text-web3-dark" />
-                  </a>
-                  <a href="https://x.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <X className="h-4 w-4 text-web3-dark" />
-                  </a>
-                  <a href="https://instagram.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <Instagram className="h-4 w-4 text-web3-dark" />
-                  </a>
-                  <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                    <MessageSquare className="h-4 w-4 text-web3-dark" />
-                  </a>
-                </div>
-              </div>
             </div>
             
             {/* Message Form Side */}
@@ -179,19 +159,19 @@ const Contact: React.FC = () => {
           <div className="mt-6 block md:hidden">
             <h3 className="text-lg font-bold mb-3">Let's Connect</h3>
             <div className="flex flex-wrap gap-2 justify-center">
-              <a href="https://github.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+              <a href="https://github.com/kelvin-omaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <Github className="h-4 w-4 text-web3-dark" />
               </a>
-              <a href="https://linkedin.com/in/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+              <a href="https://linkedin.com/in/kelvin-omaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <Linkedin className="h-4 w-4 text-web3-dark" />
               </a>
-              <a href="https://x.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+              <a href="https://x.com/techjesus_kaey" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <X className="h-4 w-4 text-web3-dark" />
               </a>
-              <a href="https://instagram.com/kelvinomaboe" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+              <a href="https://www.instagram.com/theboy_kaey" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <Instagram className="h-4 w-4 text-web3-dark" />
               </a>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
+              <a href="https://wa.link/75oudd" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <MessageSquare className="h-4 w-4 text-web3-dark" />
               </a>
             </div>
