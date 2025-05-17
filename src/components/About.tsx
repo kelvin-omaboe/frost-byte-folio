@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileText, Send, Globe } from 'lucide-react';
+import { FileText, Send, Globe, Shield, Gamepad } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -8,30 +8,35 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-12 bg-gradient-to-b from-background to-web3-lightest/30">
       <div className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid grid-cols-1 gap-12 items-center">
+          <div className="flex flex-col items-center">
             <h2 className="section-heading">About Me</h2>
-            <div className="mb-6 flex items-center">
-              <Avatar className="h-52 w-52 border-2 border-web3-main mr-6">
+            
+            {/* Larger centered avatar */}
+            <div className="flex flex-col items-center mb-8">
+              <Avatar className="h-80 w-80 border-2 border-web3-main mb-6">
                 <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Kelvin Omaboe" />
                 <AvatarFallback>KO</AvatarFallback>
               </Avatar>
-              <p className="text-lg">
-                Hi there! I'm a passionate tech student and Web/App developer & Computer Security expert with a strong interest in blockchain technology, 
-                decentralized applications, and the future of the internet.
-              </p>
+              
+              <div className="text-center">
+                <p className="text-lg mb-6">
+                  Hi there! I'm a passionate tech student and Web/App developer & Computer Security expert with a strong interest in blockchain technology, 
+                  decentralized applications, and the future of the internet.
+                </p>
+                
+                <p className="text-lg mb-6">
+                  My journey began with traditional web development, but after discovering new technologies in 2024, 
+                  I became fascinated with its potential to revolutionize how we interact with the digital world.
+                </p>
+                
+                <p className="text-lg mb-6">
+                  Currently, I'm pursuing my degree in Computer Science at the University of Cape Coast while working on various personal projects. 
+                  I'm particularly interested in learning more aout new and emerging technologies and building bridges between traditional 
+                  web applications and modern technology.
+                </p>
+              </div>
             </div>
-            
-            <p className="text-lg mb-6">
-              My journey began with traditional web development, but after discovering new technologies in 2024, 
-              I became fascinated with its potential to revolutionize how we interact with the digital world.
-            </p>
-            
-            <p className="text-lg mb-6">
-              Currently, I'm pursuing my degree in Computer Science at the University of Cape Coast while working on various personal projects. 
-              I'm particularly interested in learning more aout new and emerging technologies and building bridges between traditional 
-              web applications and modern technology.
-            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="flex items-start">
@@ -106,7 +111,6 @@ const About: React.FC = () => {
                   <p className="text-sm text-muted-foreground">ALX Professional Foundations - 2024 </p>
                   <p className="text-sm text-muted-foreground">Canva Certification Course</p>
                 </div>
-
               </div>
             </div>
           </div>

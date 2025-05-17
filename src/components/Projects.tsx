@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { Button } from "@/components/ui/button";
@@ -18,7 +19,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: "Crib",
       description: "A social Platform for all Creatives to connect, share, and collaborate on projects.",
-      image: "public/crib.png",
+      image: "/crib.png",
       tags: ["Social","Next.Js", "SuperBase", "Vercel", "HTML/CSS/Js"],
       githubUrl: "#",
       liveUrl: "#",
@@ -28,7 +29,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: "Vision",
       description: "An Online App to test vision and eye health using tests.",
-      image: "public/vision.png",
+      image: "/vision.png",
       tags: ["Health Care","Next.Js", "SuperBase", "Vercel", "HTML/CSS/Js","typeScript"],
       githubUrl: "#",
       liveUrl: "#",

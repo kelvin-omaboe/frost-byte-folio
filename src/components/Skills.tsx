@@ -6,7 +6,9 @@ import {
   Database, 
   Box, 
   Settings, 
-  Network
+  Network,
+  Shield,
+  Gamepad
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
@@ -68,7 +70,7 @@ const Skills: React.FC = () => {
     },
     {
       title: "Game Development",
-      icon: <Layers className="h-8 w-8 text-web3-main" />,
+      icon: <Gamepad className="h-8 w-8 text-web3-main" />,
       skills: [
         { name: "Unity Engine", level: 85 },
         { name: "Pygame", level: 80 },
@@ -97,7 +99,7 @@ const Skills: React.FC = () => {
     },
     {
       title: "Computer Security",
-      icon: <Box className="h-8 w-8 text-web3-main" />,
+      icon: <Shield className="h-8 w-8 text-web3-main" />,
       skills: [
         { name: "Penetration Testing", level: 50 },
         { name: "Vulnerability Assessment", level: 60 },
@@ -121,7 +123,7 @@ const Skills: React.FC = () => {
             <div 
               key={index}
               className={`bg-white dark:bg-web3-darkest/30 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-web3-lightest/50 hover:border-web3-light ${
-                visible ? 'animate-fade-in opacity-0' : 'opacity-0'
+                visible ? 'animate-fade-in' : 'opacity-0'
               }`}
               style={{ animationDelay: `${(index * 200)}ms` }}
             >

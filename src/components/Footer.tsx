@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { ChevronUp } from 'lucide-react';
 
@@ -62,7 +61,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="https://x.com/theboy_kaey" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors">
+                <a href="https://x.com/theboy_kaey" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-web3-main transition-colors flex items-center">
                   X
                 </a>
               </li>
@@ -111,4 +110,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-

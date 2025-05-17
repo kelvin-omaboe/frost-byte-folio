@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Github, Linkedin, Instagram, Send, MessageSquare, X } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram, Send, MessageSquare, Shield, Gamepad, Whatsapp } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -61,7 +61,10 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <X className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 text-web3-main mr-3 mt-1">
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                  </svg>
                   <div>
                     <h4 className="font-medium">X</h4>
                     <a href="https://x.com/techjesus_kaey" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
@@ -81,7 +84,10 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <MessageSquare className="h-5 w-5 text-web3-main mr-3 mt-1" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 text-web3-main mr-3 mt-1">
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                  </svg>
                   <div>
                     <h4 className="font-medium">WhatsApp</h4>
                     <a href="https://wa.link/75oudd" target="_blank" rel="noreferrer" className="text-web3-main hover:text-web3-dark transition-colors text-sm">
@@ -166,13 +172,19 @@ const Contact: React.FC = () => {
                 <Linkedin className="h-4 w-4 text-web3-dark" />
               </a>
               <a href="https://x.com/techjesus_kaey" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                <X className="h-4 w-4 text-web3-dark" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-web3-dark">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                </svg>
               </a>
               <a href="https://www.instagram.com/theboy_kaey" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
                 <Instagram className="h-4 w-4 text-web3-dark" />
               </a>
               <a href="https://wa.link/75oudd" target="_blank" rel="noreferrer" className="p-2 bg-web3-lightest rounded-full hover:bg-web3-light transition-colors">
-                <MessageSquare className="h-4 w-4 text-web3-dark" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-web3-dark">
+                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                  <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                </svg>
               </a>
             </div>
           </div>
